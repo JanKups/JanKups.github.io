@@ -6636,6 +6636,11 @@ __webpack_require__.r(__webpack_exports__);
 (function (window, document, $) {
   var $win = $(window);
   var $doc = $(document);
+  $('.nav-trigger').on('click', function (event) {
+    $(this).toggleClass('active');
+    $('.header__inner').toggleClass('header__inner--visible');
+    event.preventDefault();
+  });
 })(window, document, window.jQuery);
 
 /***/ }),

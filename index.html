@@ -13,15 +13,13 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-	<div class="header__inner">
-		<div class="container">
-			<div class="header__entry">
-				<div class="row align-items-center">
-					<div class="col-sm-9">
-						<a href="#" class="logo" style="background-image: url(assets/images/temp/logo.png);"></a>
-					</div><!-- /.col -->
+	<a href="#" class="logo" style="background-image: url(assets/images/temp/logo.png);"></a>
 
-					<div class="col-sm-3">
+	<div class="header__inner">
+		<div class="header__entry">
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-md-3">
 						<nav class="nav-secondary">
 							<ul>
 								<li>
@@ -39,52 +37,54 @@
 						</nav><!-- /.nav-secondary -->
 					</div><!-- /.col -->
 				</div><!-- /.row -->
-			</div><!-- /.header__entry -->
-		</div><!-- /.container -->
+			</div><!-- /.container -->
+		</div><!-- /.header__entry -->
+
+		<div class="header__content">
+			<div class="container">
+				<nav class="nav">
+					<ul>
+						<li>
+							<a href="#">Nieuws</a>
+						</li>
+
+						<li>
+							<a href="#">Columns</a>
+						</li>
+
+						<li>
+							<a href="#">Opinie</a>
+						</li>
+
+						<li>
+							<a href="#">Dossiers</a>
+						</li>
+
+						<li>
+							<a href="#">Uit agenda</a>
+						</li>
+
+						<li>
+							<a href="#">Podcasts</a>
+						</li>
+					</ul>
+				</nav><!-- /.nav -->
+			</div><!-- /.container -->
+		</div><!-- /.header__content -->
 	</div><!-- /.header__inner -->
 
-	<div class="header__content">
-		<div class="container">
-			<nav class="nav">
-				<ul>
-					<li>
-						<a href="#">Nieuws</a>
-					</li>
-
-					<li>
-						<a href="#">Columns</a>
-					</li>
-
-					<li>
-						<a href="#">Opinie</a>
-					</li>
-
-					<li>
-						<a href="#">Dossiers</a>
-					</li>
-
-					<li>
-						<a href="#">Uit agenda</a>
-					</li>
-
-					<li>
-						<a href="#">Podcasts</a>
-					</li>
-				</ul>
-			</nav><!-- /.nav -->
-		</div><!-- /.container -->
-	</div><!-- /.header__content -->
 </header><!-- /.header -->
+
 
 		<div class="main">
 			<section class="section">
 				<div class="container">
-					<div class="row">
-						<div class="col-sm-3">
-							<div class="articles">
+					<div class="row d-flex">
+						<div class="col-md-6 col-lg-3 order-1 order-md-2">
+							<div class="articles articles--columns">
 								<div class="articles__head">
 									<h4>columns</h4>
-								</div><!-- /.articles__head -->
+								</div><!-- /.articles__head-->
 
 								<div class="articles__body">
 									<div class="article">
@@ -115,14 +115,27 @@
 										</div><!-- /.article__content -->
 									</div><!-- /.article -->
 								</div><!-- /.articles__body -->
-							</div><!-- /.articles -->
+							</div><!-- /.articles articles-/-columns-->
 						</div><!-- /.col -->
 
-						<div class="col-sm-6">
-							<div class="articles articles--borders">
-								<div class="articles__head">
+						<div class="col-lg-6 order-0 order-lg-2">
+							<div class="articles articles--borders articles--news">
+								<div class="articles__head articles__head-bordered">
 									<h4>NIEUWS</h4>
-								</div><!-- /.articles__head -->
+
+									<div class="articles__head-inner">
+
+										<a href="#" class="nav-trigger">
+											<span></span>
+
+											<span></span>
+
+											<span></span>
+										</a>
+
+										<a href="#"> <i class="ico-search"></i> </a>
+									</div><!-- /.articles__head-inner -->
+								</div><!-- /.articles__head articles__head-bordered-->
 
 								<div class="articles__body">
 									<div class="article">
@@ -139,7 +152,7 @@
 										</div><!-- /.article__content -->
 									</div><!-- /.article -->
 
-									<div class="article">
+									<div class="article d-md-block d-md-block d-sm-none d-xs-none d-xxs-none">
 										<div class="article__content">
 											<h5>brief uit amelisweerd</h5>
 
@@ -148,15 +161,41 @@
 											<a href="#">Door Hans Bartels</a>
 										</div><!-- /.article__content -->
 									</div><!-- /.article -->
+
+									<div class="articles-sm d-none d-md-none d-sm-flex d-xs-flex d-xxs-flex">
+										<div class="article-flex">
+											<div class="article__image">
+												<img src="assets/images/temp/article-image-2.png" alt="">
+											</div><!-- /.article__image -->
+
+											<div class="article__content">
+												<p>De nacht van de nacht was nog lang niet donker genoeg.</p>
+
+												<a href="#">Door Michael Kroonbergs</a>
+											</div><!-- /.article__content -->
+										</div><!-- /.article -->
+
+										<div class="article-flex">
+											<div class="article__image">
+												<img src="assets/images/temp/article-image-2.png" alt="">
+											</div><!-- /.article__image -->
+
+											<div class="article__content">
+												<p>De nacht van de nacht was nog lang niet donker genoeg.</p>
+
+												<a href="#">Door Michael Kroonbergs</a>
+											</div><!-- /.article__content -->
+										</div><!-- /.article -->
+									</div><!-- /.articles-sm d-none d-xs-block-->
 								</div><!-- /.articles__body -->
 							</div><!-- /.articles -->
 						</div><!-- /.col -->
 
-						<div class="col-sm-3">
-							<div class="articles">
-								<div class="articles__head">
+						<div class="col-md-6 col-lg-3 order-md-2 order-lg-3">
+							<div class="articles articles--dossiers">
+								<div class="articles__head articles__head-bordered">
 									<h4>dossiers</h4>
-								</div><!-- /.articles__head -->
+								</div><!-- /.articles__head articles__head-bordered-->
 
 								<div class="articles__body">
 									<h5>dossiers van deze week</h5>
@@ -215,7 +254,7 @@
 				</div><!-- /.container -->
 			</section><!-- /.section -->
 
-			<section class="section-image">
+			<section class="section-image d-none d-md-block">
 				<div class="container">
 					<div class="section__entry">
 						<h5>~ ADVERTENTIE ~</h5>
@@ -225,9 +264,9 @@
 						</div><!-- /.section__image -->
 					</div><!-- /.section__entry -->
 				</div><!-- /.container -->
-			</section><!-- /.section -->
+			</section><!-- /.section-image d-none d-md-block -->
 
-			<section class="section-articles-alt">
+			<section class="section-articles-alt d-none d-md-block">
 				<header class="section__head">
 					<div class="container">
 						<div class="section__head-entry">
@@ -247,7 +286,7 @@
 								<div class="articles">
 									<div class="row">
 										<div class="col-sm-6">
-											<div class="article-flex article-flex--revirse article-flex--border-bottom">
+											<div class="article-flex article-flex--reverse article-flex--border-bottom">
 												<div class="article__image">
 													<img src="assets/images/temp/article-image-2.png" alt="">
 												</div><!-- /.article__image -->
@@ -263,7 +302,7 @@
 										</div><!-- /.col-sm-6 -->
 
 										<div class="col-sm-6">
-											<div class="article-flex article-flex--revirse article-flex--border-bottom">
+											<div class="article-flex article-flex--reverse article-flex--border-bottom">
 												<div class="article__image">
 													<img src="assets/images/temp/article-image-2.png" alt="">
 												</div><!-- /.article__image -->
@@ -279,7 +318,7 @@
 										</div><!-- /.col-sm-6 -->
 
 										<div class="col-sm-6">
-											<div class="article-flex article-flex--revirse article-flex--border-bottom">
+											<div class="article-flex article-flex--reverse article-flex--border-bottom">
 												<div class="article__image">
 													<img src="assets/images/temp/article-image-2.png" alt="">
 												</div><!-- /.article__image -->
@@ -295,7 +334,7 @@
 										</div><!-- /.col-sm-6 -->
 
 										<div class="col-sm-6">
-											<div class="article-flex article-flex--revirse article-flex--border-bottom">
+											<div class="article-flex article-flex--reverse article-flex--border-bottom">
 												<div class="article__image">
 													<img src="assets/images/temp/article-image-2.png" alt="">
 												</div><!-- /.article__image -->
@@ -311,7 +350,7 @@
 										</div><!-- /.col-sm-6 -->
 
 										<div class="col-sm-6">
-											<div class="article-flex article-flex--revirse">
+											<div class="article-flex article-flex--reverse">
 												<div class="article__image">
 													<img src="assets/images/temp/article-image-2.png" alt="">
 												</div><!-- /.article__image -->
@@ -327,7 +366,7 @@
 										</div><!-- /.col-sm-6 -->
 
 										<div class="col-sm-6">
-											<div class="article-flex article-flex--revirse">
+											<div class="article-flex article-flex--reverse">
 												<div class="article__image">
 													<img src="assets/images/temp/article-image-2.png" alt="">
 												</div><!-- /.article__image -->
@@ -365,7 +404,7 @@
 				</div><!-- /.section__body -->
 			</section><!-- /.section -->
 
-			<section class="section-articles-alt">
+			<section class="section-articles-alt d-none d-md-block">
 				<header class="section__head">
 					<div class="container">
 						<div class="section__head-entry">
@@ -400,7 +439,7 @@
 											<span>08:30 uur</span>
 										</div><!-- /.article-flex__actions -->
 									</div><!-- /.article__content -->
-								</div><!-- /.article -->
+								</div><!-- /.article-flex article-flex-/-large -->
 
 								<div class="article-flex article-flex--large">
 									<div class="article__image">
@@ -420,7 +459,7 @@
 											<span>08:30 uur</span>
 										</div><!-- /.article-flex__actions -->
 									</div><!-- /.article__content -->
-								</div><!-- /.article -->
+								</div><!-- /.article-flex article-flex-/-large -->
 
 								<div class="article-flex article-flex--large">
 									<div class="article__image">
@@ -440,7 +479,7 @@
 											<span>08:30 uur</span>
 										</div><!-- /.article-flex__actions -->
 									</div><!-- /.article__content -->
-								</div><!-- /.article -->
+								</div><!-- /.article-flex article-flex-/-large -->
 
 								<div class="article-flex article-flex--large">
 									<div class="article__image">
@@ -465,9 +504,9 @@
 						</div><!-- /.section__content -->
 					</div><!-- /.container -->
 				</div><!-- /.section__body -->
-			</section><!-- /.section -->
+			</section><!-- /.section-articles-alt d-none d-md-block -->
 
-			<div class="section-audio">
+			<section class="section-audio">
 				<header class="section__head">
 					<div class="container">
 						<h4>podcast</h4>
@@ -481,25 +520,26 @@
 								<source src="horse.ogg" type="audio/ogg">
 									<source src="horse.mp3" type="audio/mpeg">
 										Your browser does not support the audio element.
-									</audio>
-								</div><!-- /.audio -->
-							</div><!-- /.container -->
-						</div><!-- /.section__body -->
-					</div><!-- /.section-audio -->
+							</audio>
+						</div><!-- /.audio -->
+					</div><!-- /.container -->
+				</div><!-- /.section__body -->
+			</section><!-- /.section-audio -->
 
-					<section class="section-image">
-						<div class="container">
-							<div class="section__entry">
-								<h5>~ ADVERTENTIE ~</h5>
+			<section class="section-image d-none d-md-block">
+				<div class="container">
+					<div class="section__entry">
+						<h5>~ ADVERTENTIE ~</h5>
 
-								<div class="section__image">
-									<img src="assets/images/temp/section-image-2.jpg" alt="">
-								</div><!-- /.section__image -->
-							</div><!-- /.section__entry -->
-						</div><!-- /.container -->
-					</section><!-- /.section -->
-				</div><!-- /.main -->
-				<div class="footer">
+						<div class="section__image">
+							<img src="assets/images/temp/section-image-2.jpg" alt="">
+						</div><!-- /.section__image -->
+					</div><!-- /.section__entry -->
+				</div><!-- /.container -->
+			</section><!-- /.section-image d-none d-md-block -->
+		</div><!-- /.main -->
+
+		<div class="footer">
 	<div class="footer__entry">
 		<div class="container">
 			<ul>
@@ -525,7 +565,7 @@
 	<div class="footer__inner">
 		<div class="footer__links">
 			<div class="row">
-				<div class="col col--alt">
+				<div class="col">
 					<div class="footer__link">
 						<h5>nieuws</h5>
 
@@ -625,7 +665,7 @@
 							<ul>
 								<li>
 									<a href="#">
-										<i class="ico-face-book"></i>
+										<i class="ico-facebook"></i>
 									</a>
 								</li>
 
@@ -651,7 +691,7 @@
 					</div><!-- /.footer__link -->
 				</div><!-- /.col -->
 
-				<div class="col col--alt">
+				<div class="col">
 					<div class="footer__link">
 						<h5>CULTUUR</h5>
 
@@ -768,10 +808,10 @@
 </div><!-- /.footer -->
 
 
-			</div><!-- /.wrapper -->
+	</div><!-- /.wrapper -->
 
-			<script src="assets/vendor/jquery-3.1.1.min.js"></script>
+	<script src="assets/vendor/jquery-3.1.1.min.js"></script>
 <script src="assets/js/bundle.js"></script>
 
-		</body>
-		</html>
+</body>
+</html>
